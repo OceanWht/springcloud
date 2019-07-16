@@ -75,7 +75,7 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
      * @param errorMessage 异常信息
      * @return 返回数据
      */
-    private static Map<String, Object> response(int status, String errorMessage) {
+    public static Map<String, Object> response(int status, String errorMessage) {
         Map<String, Object> map = new HashMap<>();
         map.put("code", status);
         map.put("message", errorMessage);
