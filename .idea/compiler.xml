@@ -9,6 +9,7 @@
         <module name="eurekaclient" />
         <module name="eurekaserver" />
         <module name="gateway" />
+        <module name="openfeign" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="openfeign" options="-parameters" />
     </option>
   </component>
   <component name="TypeScriptCompiler">
