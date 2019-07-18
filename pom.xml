@@ -13,6 +13,7 @@
         <module>eurekaclient</module>
         <module>gateway</module>
         <module>openfeign</module>
+        <module>config</module>
     </modules>
     <packaging>pom</packaging>
     <parent>

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/OceanWht/SpringCloudLesson.git  #配置git仓库地址
+          search-paths: 第09课/config  #配置仓库路径
+          username: OceanWht          #用户名
+          password: Wht@123456        #密码
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
