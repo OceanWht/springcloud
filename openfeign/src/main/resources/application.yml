@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: openfeign
+
+feign:
+  hystrix:
+    enabled: true

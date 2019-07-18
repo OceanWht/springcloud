@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 //@FeignClient
-@FeignClient(value = "eurekaclient")
+@FeignClient(value = "eurekaclient",fallback = ApiServiceError.class)
 public interface ApiService {
 
     @RequestMapping(value = "/index",method = RequestMethod.GET)
